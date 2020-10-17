@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Хлебомолы</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <section class="top-section">
+    <header class="main-wrap">
+      <div class="header-wrap">
+        <div class="nav">
+          <a href="#" class="nav-link">О магазине</a>
+          <a href="#" class="nav-link">Доставка и самовывоз</a>
+          <a href="#" class="nav-link">Оплата</a>
+          <a href="#" class="nav-link">Контакты</a>
+          <a href="#" class="nav-link">Блог</a>
+        </div>
+        <div class="user-info">
+          <div class="user-adress">Город Москва</div>
+          <div class="user-login">Личный кабинет</div>
+        </div>
+      </div>
+      <div class="header-block">
+        <div class="logo-wrap">
+          <div class="logo header-logo">
+            <img class="logo" src="./img/xgdfg.png">
+          </div>
+           
+          <div class="logo-text">
+            <p>Хлебомолы</p>
+            <p class="logo-text-small">Технолгия правильного питания</p>
+          </div>
+         
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Найти что-нибудь">
+        </div>
+        <div class="number-block">
+          <p class="number number-header">+7800 555-33-86</p>
+          <p class="number-info">Обратный звонок</p>
+            <div class="basket header-basket">
+              <p class='menu-basket'>13 990p</p>
+            </div>
+        </div>
+       
+      </div>
+      <div class="menu">
+        <div class="menu-links">
+          <a href="#" class="menu-link">Мельницы</a>
+          <a href="#" class="menu-link">Техника</a>
+          <a href="#" class="menu-link">Для выпечки</a>
+          <a href="#" class="menu-link">Посуда</a>
+          <a href="#" class="menu-link">Проращиватели</a>
+          <a href="#" class="menu-link">Детям</a>
+          <a href="#" class="menu-link">Чай из непала</a>
+        </div>
+        <div class="basket">
+          <p class='menu-basket'>13 990p</p>
+        </div>
+      </div>
+    </header>
+  </section>
+  
+  <div class="order-wrap main-wrap">
+    <div class="order-title order-title__top">
+      <p>Оформление заказа</p>
+    </div>
+    <!-- общая обложка на все формы -->
+    <div class="order-wrap__inside">
+      <!-- обложка на левую форму -->
+      <div class="form-wrap">
+        <div class="form-filter">
+          <div class="form-filter__individual">Физическое лицо</div>
+          <div class="form-filter__entity">Юридическое лицо</div>
+        </div>
+        <div class="form-contacts">
+          <div class="form-title">Контактные данные</div>
+          <div class="form-wrap">
+            <div class="user-name">
+              <p>Имя</p>
+              <input type="text"  placeholder="Александр" id="user_name">
+            </div>
+            <div class="user-surname">
+              <p>Фамилия</p>
+              <input type="text" placeholder="Пушкин" id="user_surname">
+            </div>
+            <div class="user-mail">
+              <p>эл.почта</p>
+              <input type="text" placeholder="почта">
+            </div>
+            <div class="user-number">
+              <p>Номер телефона</p>
+              <input type="text" class="mask-phone form-control" id="tel" placeholder="Номер телефона">
+            </div>
+          </div>
+        </div>
+        <div class="form-title">Адрес и способ доставки</div>
+        <div class="form-wrap delivery-country">
+          <div class="user-country">
+            <p>Страна</p>
+            <select class="">
+              <option>Россия</option>
+              <option>Украина</option>
+            </select>
+          </div>
+          <div class="user-town">
+            <p>Город</p>
+            <select>
+              <option>Москва</option>
+              <option>Симферополь</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-title">Способ доставки</div>
+        <div class="form-wrap delivery-form">
+
+          <div class="checkbox">
+            <div class="checkbox-circle curier"></div>
+            <div class="checkbox-info">
+              <span class="checkbox-info-title">доставка курьерской службой - 710руб</span>
+              <span class="checkbox-info__sub sub__color">Срок доставки 1-3 дня</span>
+            </div>
+          </div>
+          <div class="checkbox">
+            <div class="checkbox-circle transport-company"></div>
+            <div class="checkbox-info">
+              <span class="checkbox-info-title ">доставка транспортной компанией -210руб</span>
+              <span class="checkbox-info__sub sub__color">Данный вид лоставки возмоден при полной предоплате заказа.
+                Срок
+                доставки 3-5 дней</span>
+            </div>
+          </div>
+          <div class="checkbox">
+            <div class="checkbox-circle"></div>
+            <div class="checkbox-info">
+              <span class="checkbox-info-title" id="">Самовывоз 180руб</span>
+              <span class="checkbox-info__sub sub__color">Доставка до пунтка самовывоза займет 2-3 дня</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-title">Пункт самовывоза</div>
+        <div class="form-wrap delivery-country">
+          <div class="change-metro">
+            <span class="sub__color">Станция метро</span>
+            <select class="">
+              <option>кузнецкий мост</option>
+              <option>станция метро 2</option>
+              <option>станция метро 3</option>
+            </select>
+          </div>
+        </div>
+         <div class="form-title">Комментарий к заказу</div>
+              <div class="form-comments">
+                <textarea  name="text"></textarea> 
+                <div class="form-button">К выбору способа оплаты</div>
+              </div>
+      </div>
+      <div class="order-block">
+        <div class="form-title order-block__title">Ваш заказ</div>
+        <div class="order-list">
+
+          <div class="order-list-item">
+            <div class="list-item">
+              <span class="list-item_el">Мельница ручная Kornkraft Mia aMola</span>
+              <span class="list-item__price">18 990p</span>
+            </div>
+          </div>
+          <div class="order-list-item">
+            <div class="list-item">
+              <span class="list-item_el">Пшеница БИО, 1 кг (Россия) (2 шт)</span>
+              <span class="list-item__price">420p</span>
+            </div>
+          </div>
+          <div class="order-list-item">
+             <div class="el__dashed"></div>
+            <div class="list-item">
+              <span class="list-item_el">Размер скидки 5%</span>
+              <span class="list-item__price">420p</span>
+            </div>
+          </div>
+          <div class="order-list-item">
+            <div class="list-item">
+              <span class="list-item_el">Итого </span>
+              <span class="list-item__price">18 344p</span>
+            </div>
+          </div>
+          <div class="order-list-item">
+            <div class="list-item">
+              <span class="list-item_el delivery_method">Самовывоз</span>
+              <span class="list-item__price price_in_basket">180</span>
+            </div>
+          </div>
+          <div class="order-list-item">
+            <div class="list-item">
+              <span class="list-item_el">Итого</span>
+              <span class="list-item__price">18 344р</span>
+            </div>
+          </div>
+          <div class="order-list-item">
+            <div class="el__dashed"></div>
+
+            <div class="list-item delivery-item">
+              <span class="list-item_el">Сумма с доставкой</span>
+              <span class="list-item__price final_check">18 734р</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="./index.js"></script>
+   <script src="https://unpkg.com/imask"></script>
+</body>
+</html>
